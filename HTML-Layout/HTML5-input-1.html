@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Input</title>
+</head>
+<body>
+	<!-- 在移动端存在效果 -->
+	邮箱类型:<input type="email"><!-- 弹出邮箱软键盘 --><br/>
+	url类型:<input type="url"><!-- 弹出英文软键盘 --><br/>
+	电话号码类型:<input type="tel"><!-- 弹出电话数字键盘 --><br/>
+	数字类型:<input type="number"><br/>
+	年月日:<input type="date"><!-- 年月日 --><br/>
+	年月:<input type="month"><!-- 年月 --><br/>
+	年周:<input type="week"><br/>
+	上下午时分:<input type="time"><!-- 上午下午-时分 --><br/>
+	<input type="datetime"><!-- 月日星期时分 ios10以后不生效--><br/>
+	PC年月日时分:<input type="datetime-local"><!-- 月日星期上下午-时分 --><br/>
+
+	姓名：<input type="text" name="name"><br/>
+	姓别：
+	<input type="radio" name="sex" value="1">男
+	<input type="radio" name="sex" value="1">女<br/>
+	出生日期<input type="date"><br/>
+	出生月份<input type="month"><br/>
+	出生周数<input type="week"><br/>
+	<input type="submit" value="提交"><br/>
+	<input type="range" name="range" min="1" max="10">
+	<input type="search">
+	<input type="color">取色器
+
+	<input type="range" list="testList">
+	<datalist id="testList">
+		<option value="0" label="0%"></option>
+		<option value="10"></option>
+		<option value="20"></option>
+		<option value="30"></option>
+		<option value="40"></option>
+		<option value="50" abel="50%"></option>
+		<option value="60"></option>
+		<option value="70"></option>
+		<option value="80"></option>
+		<option value="90"></option>
+		<option value="100" abel="100%"></option>
+	</datalist>
+<!-- 	1.form当中一些新增属性
+	autocomplete自动提示，只有on/off属性
+	autofocus自动获取焦点 
+	multiple多选，适用于文件选择和邮件
+	placeholder用于提示输入框中的内容
+	required是单标签属性，表示必须输入的字段	
+-->
+
+
+
+
+	<form>
+		用户名：<input type="text" name="username" autocomplete="on" >
+		<br><br>
+		邮箱：<input type="email" name="mail" autocomplete="off">
+		<br><br>
+		手机号码：<input type="tel" name="phone" autocomplete="off">
+		<br><br>
+		<input type="file" name="file" multiple="multiple">
+		<input type="email" name="mail" multiple="multiple">
+		<input type="submit" value="提交">
+	</form>
+<hr>
+<form action="">
+	用户名：<input type="text" name="username" autofocus="autofocus" required="required" autocomplete="off">
+	密码：<input type="password" name="pwd" required="required">
+	<input type="submit" value="提交">
+</form>
+
+
+</body>
+</html>
