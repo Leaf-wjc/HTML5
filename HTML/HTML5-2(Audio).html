@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- audio的样式只能通过API来控制，不能通过CSS样式 -->
+	<audio src="../source/passion.mp3" autoplay="autoplay" controls="controls" loop="-1">您的浏览器也该退休了，是否考虑一下Chrome这样的新鲜血液呢</audio>
+	<!-- 如果浏览器不支持audio标签就会显示内部的文字 -->
+
+<!-- 	为了针对不同浏览器对音频格式的解析方式不同这一特点
+ 	可以像下面这样写 
+ 	source标签为媒体元素定义媒体资源
+-->
+	<audio autoplay="autoplay" controls="controls">
+		<source src="../source/passion.mp3" type="audio/mpeg"></source>
+	</audio>
+</body>
+</html>
