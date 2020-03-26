@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表标签</title>
+</head>
+<body>
+<!-- 列表标签 -->
+	<input placeholder="这是一个HTML5新增的标签" list="phoneList">
+	<datalist id="phoneList">
+		<option value="Apple"></option>
+		<option value="Samsung"></option>
+		<option value="Huawei"></option>
+		<option value="HTC"></option>
+		<option value="OPPO"></option>
+		<option value="MI"></option>
+	</datalist>
+	<details open="open">
+		<summary>详细信息</summary>
+		<p>这是HTML5新增的一个标签，具有收起和展示效果</p>
+	</details>
+<!-- 注释标签 -->
+<p>我是一<ruby>个<rp>(</rp><rt>ge</rt><rp>)</rp></ruby>好孩子</p>
+
+<p>
+	<ruby>魑<rt>chi</rt></ruby>
+	<ruby>魅<rt>mei</rt></ruby>
+	<ruby>魍<rt>wang</rt></ruby>
+</p>
+<!-- 其它标签 -->
+<mark>这是一个mark标签</mark>
+<p>你是<mark>猴子</mark>请来的救兵么</p>
+<!-- output标签 -->
+<form oninput="totalPrice.value=parseInt(price.value)*parseInt(num.value)" >
+	<input type="text" value="5000" id="price"><!-- range标签只能1-100 -->
+	<input type="number" value="1" id="num">
+	<output name="totalPrice" for="price num"></output>
+
+    <meter value="70" min="0" max="100" low="60" high="80" optimum="75"></meter>
+    <meter vlaue="70" min="0" max="100" low="60" high="80" optimum="75"></meter>
+</form>
+</body>
+</html>
