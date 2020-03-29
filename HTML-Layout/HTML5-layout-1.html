@@ -9,6 +9,14 @@
 	提升网页的质量和性能，减少了class和id的属性
 	对搜索引擎的友好 
 	1.li标签是最不利于搜索引擎收入的标签
+	2.有关HTML5布局一些标签的兼容性
+	比如说
+	header - nav - section - aside - article - footer
+	针对于不兼容的浏览器，例如IE8
+	header,nav,section,aside,article,footer{
+	display:block;
+	}
+	都改成块级元素，对于不识别的浏览器，就会把它当成div
 -->
 </body>
 </html>
